@@ -15,7 +15,7 @@ class Blockchain:
     def last_block(self):
         return self.chain[-1]
 
-    difficulty = 2
+    difficulty = 1
     def proof_of_work(self, block):
         computed_hash = block.compute_hash()
         start = time.time()
